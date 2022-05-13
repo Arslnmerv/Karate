@@ -1,0 +1,7 @@
+<testsuite failures="0" name="tests/FirstTest.feature" skipped="0" tests="1" time="1.361306">
+  <testcase classname="tests.FirstTest" name="Test a Sample Get API" time="1.361306">
+    <system-out>Given url  "https://reqres.in/api/users?page=2" ........................... passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed</system-out>
+  </testcase>
+</testsuite>

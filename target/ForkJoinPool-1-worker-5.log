@@ -1,0 +1,150 @@
+14:03:05.240 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+14:03:05.897 request:
+1 > DELETE https://reqres.in/api/users/2
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: reqres.in
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.11)
+
+14:03:06.552 response time in milliseconds: 653.32
+1 < 204
+1 < Access-Control-Allow-Origin: *
+1 < CF-Cache-Status: DYNAMIC
+1 < CF-RAY: 70aae7d9583b72f6-LHR
+1 < Connection: keep-alive
+1 < Content-Length: 0
+1 < Date: Fri, 13 May 2022 11:03:06 GMT
+1 < Etag: W/"2-vyGp6PvFo4RvsFtPoIWeCReyIC8"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=SzU4j%2FaUrTSCjpIK8a%2FVFqhBMHrWthIl2JDdP31syUvzCcZCXcMsvPQcOK2xqHIhrdOLtosB%2FsqyArz9C5rTXKwyzvDP%2Fkt1VYAraAUHYP8KyrYk0EEJlSpvBJE%3D"}],"group":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+1 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+
+14:03:06.553 [print] 
+14:03:06.564 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+14:03:06.572 request:
+1 > GET https://reqres.in/api/users?page=2
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: reqres.in
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.11)
+
+14:03:06.912 response time in milliseconds: 338.56
+1 < 200
+1 < Access-Control-Allow-Origin: *
+1 < Age: 112
+1 < CF-Cache-Status: HIT
+1 < CF-RAY: 70aae7dbdf0472de-LHR
+1 < Cache-Control: max-age=14400
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Fri, 13 May 2022 11:03:06 GMT
+1 < Etag: W/"406-ut0vzoCuidvyMf8arZpMpJ6ZRDw"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=hrpbNM2aTUwiehLPVGE7SMWG1TbSAHD%2FI1ExeTwQx%2Bs1fPvoJ8ZJFu30EwO2nf%2FlDCPC5x8RUmgyFZiQ8hWNF65W8uMfGU3M1qAN3tpZp68DraIpZUHH3Y4eQcE%3D"}],"group":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < Transfer-Encoding: chunked
+1 < Vary: Accept-Encoding
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+1 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+{"page":2,"per_page":6,"total":12,"total_pages":2,"data":[{"id":7,"email":"michael.lawson@reqres.in","first_name":"Michael","last_name":"Lawson","avatar":"https://reqres.in/img/faces/7-image.jpg"},{"id":8,"email":"lindsay.ferguson@reqres.in","first_name":"Lindsay","last_name":"Ferguson","avatar":"https://reqres.in/img/faces/8-image.jpg"},{"id":9,"email":"tobias.funke@reqres.in","first_name":"Tobias","last_name":"Funke","avatar":"https://reqres.in/img/faces/9-image.jpg"},{"id":10,"email":"byron.fields@reqres.in","first_name":"Byron","last_name":"Fields","avatar":"https://reqres.in/img/faces/10-image.jpg"},{"id":11,"email":"george.edwards@reqres.in","first_name":"George","last_name":"Edwards","avatar":"https://reqres.in/img/faces/11-image.jpg"},{"id":12,"email":"rachel.howell@reqres.in","first_name":"Rachel","last_name":"Howell","avatar":"https://reqres.in/img/faces/12-image.jpg"}],"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}
+
+14:03:06.919 [print] {
+  "per_page": 6,
+  "total": 12,
+  "data": [
+    {
+      "last_name": "Lawson",
+      "id": 7,
+      "avatar": "https://reqres.in/img/faces/7-image.jpg",
+      "first_name": "Michael",
+      "email": "michael.lawson@reqres.in"
+    },
+    {
+      "last_name": "Ferguson",
+      "id": 8,
+      "avatar": "https://reqres.in/img/faces/8-image.jpg",
+      "first_name": "Lindsay",
+      "email": "lindsay.ferguson@reqres.in"
+    },
+    {
+      "last_name": "Funke",
+      "id": 9,
+      "avatar": "https://reqres.in/img/faces/9-image.jpg",
+      "first_name": "Tobias",
+      "email": "tobias.funke@reqres.in"
+    },
+    {
+      "last_name": "Fields",
+      "id": 10,
+      "avatar": "https://reqres.in/img/faces/10-image.jpg",
+      "first_name": "Byron",
+      "email": "byron.fields@reqres.in"
+    },
+    {
+      "last_name": "Edwards",
+      "id": 11,
+      "avatar": "https://reqres.in/img/faces/11-image.jpg",
+      "first_name": "George",
+      "email": "george.edwards@reqres.in"
+    },
+    {
+      "last_name": "Howell",
+      "id": 12,
+      "avatar": "https://reqres.in/img/faces/12-image.jpg",
+      "first_name": "Rachel",
+      "email": "rachel.howell@reqres.in"
+    }
+  ],
+  "page": 2,
+  "total_pages": 2,
+  "support": {
+    "text": "To keep ReqRes free, contributions towards server costs are appreciated!",
+    "url": "https://reqres.in/#support-heading"
+  }
+}
+
+14:03:07.081 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+14:03:07.088 request:
+1 > POST https://reqres.in/api/users
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 32
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: reqres.in
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.11)
+{"name":"murphy","job":"leader"}
+
+14:03:07.430 response time in milliseconds: 341.07
+1 < 201
+1 < Access-Control-Allow-Origin: *
+1 < CF-Cache-Status: DYNAMIC
+1 < CF-RAY: 70aae7dedc40f407-LHR
+1 < Connection: keep-alive
+1 < Content-Length: 82
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Fri, 13 May 2022 11:03:07 GMT
+1 < Etag: W/"52-dIa3SgU5mLQMtjq6U609VE7Fmvk"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=Uv2smxX6vpDV7jIcYoYVULWhaR0USehf%2BpvhrsxQ%2F8OwgEw6ZYTAJVgrTrwCSU9FPuFmfV2JPUh%2FkF3lDZdMUGWR%2FQCLx5qU1cFSFSOdkLu09S9Az09pW%2BX0Nvw%3D"}],"group":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+1 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+{"name":"murphy","job":"leader","id":"870","createdAt":"2022-05-13T11:03:07.363Z"}
+
+14:03:07.431 [print] {
+  "createdAt": "2022-05-13T11:03:07.363Z",
+  "name": "murphy",
+  "id": "870",
+  "job": "leader"
+}
+

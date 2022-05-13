@@ -1,0 +1,9 @@
+<testsuite failures="0" name="tests/Put.feature" skipped="0" tests="1" time="0.325512">
+  <testcase classname="tests.Put" name="Put Demo 1" time="0.325512">
+    <system-out>Given url 'https://reqres.in/api/users/2' ................................. passed
+And request {"name": "morpheus",  "job": "zion resident"} ................. passed
+When method PUT ........................................................... passed
+Then status 200 ........................................................... passed
+And print response ........................................................ passed</system-out>
+  </testcase>
+</testsuite>

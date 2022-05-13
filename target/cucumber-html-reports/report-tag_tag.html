@@ -1,0 +1,1696 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+<script type="text/javascript" src="js/Chart.min.js"></script>
+<script type="text/javascript" src="js/moment.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+  
+<title>Cucumber Reports  - Tag: @tag</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+                <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation" ><a href="overview-steps.html">Steps</a></li>
+                <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+    
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+            <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>demo</td>
+            <td>13 May 2022, 14:07</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+      </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Tag Report</h2>
+      </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table class="stats-table">
+
+        
+<thead>
+  <tr class="header dont-sort">
+        <th></th>
+    <th colspan="6">Steps</th>
+    <th colspan="3">Scenarios</th>
+    <th colspan="2">Features</th>
+  </tr>
+  <tr>
+    <th>Tag</th>
+        <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="skipped">Skipped</th>
+    <th class="pending">Pending</th>
+    <th class="undefined">Undefined</th>
+    <th class="total">Total</th>
+
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="total">Total</th>
+
+    <th>Duration</th>
+    <th>Status</th>
+  </tr>
+</thead>
+
+
+        <tbody>
+        <tr>
+          <td class="tagname">@tag</td>
+                    <td      class="passed"    >31</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td class="total">31</td>
+
+          <td  class="passed"    >5</td>
+          <td >0</td>
+          <td class="total">5</td>
+
+          <td class="duration" data-value="5195330496">5s 195ms</td>
+          <td class="passed">Passed</td>
+        </tr>
+        </tbody>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="elements">
+
+                  
+<div class="element">
+      <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_tests-Get-feature_2.html">tests/Get.feature</a>
+    </div>
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">1s 448ms</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Get Demo 1</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-1" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-2">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-2" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url  'https://reqres.in/api/users?page=2'</span>
+  
+  <span class="lead-duration duration">009ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method GET</span>
+  
+  <span class="lead-duration duration">1s 319ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-3">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-3" class="collapse collapsable-details">
+        <pre>14:03:05.898 request:
+1 &gt; GET https://reqres.in/api/users?page=2
+1 &gt; Accept: application/json
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: reqres.in
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.11)
+
+14:03:06.530 response time in milliseconds: 628.08
+1 &lt; 200
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Age: 1679
+1 &lt; CF-Cache-Status: HIT
+1 &lt; CF-RAY: 70aae7d9695f777d-LHR
+1 &lt; Cache-Control: max-age=14400
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Fri, 13 May 2022 11:03:06 GMT
+1 &lt; Etag: W/&quot;406-ut0vzoCuidvyMf8arZpMpJ6ZRDw&quot;
+1 &lt; Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
+1 &lt; NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=y95p%2FPRkFS2wQhPqAk3a2NxHN%2BjgAcZ%2B2vbg8TLMn9PT6c9VkNR9%2FHUuo%2BqpiudKuzR8hFhHnj%2B1ViN8aQ3jQudyZKHBP%2FN6lCV25cn8M7G7XnBQikseQzew3ag%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; Server: cloudflare
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Vary: Accept-Encoding
+1 &lt; Via: 1.1 vegur
+1 &lt; X-Powered-By: Express
+1 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400
+{&quot;page&quot;:2,&quot;per_page&quot;:6,&quot;total&quot;:12,&quot;total_pages&quot;:2,&quot;data&quot;:[{&quot;id&quot;:7,&quot;email&quot;:&quot;michael.lawson@reqres.in&quot;,&quot;first_name&quot;:&quot;Michael&quot;,&quot;last_name&quot;:&quot;Lawson&quot;,&quot;avatar&quot;:&quot;https://reqres.in/img/faces/7-image.jpg&quot;},{&quot;id&quot;:8,&quot;email&quot;:&quot;lindsay.ferguson@reqres.in&quot;,&quot;first_name&quot;:&quot;Lindsay&quot;,&quot;last_name&quot;:&quot;Ferguson&quot;,&quot;avatar&quot;:&quot;https://reqres.in/img/faces/8-image.jpg&quot;},{&quot;id&quot;:9,&quot;email&quot;:&quot;tobias.funke@reqres.in&quot;,&quot;first_name&quot;:&quot;Tobias&quot;,&quot;last_name&quot;:&quot;Funke&quot;,&quot;avatar&quot;:&quot;https://reqres.in/img/faces/9-image.jpg&quot;},{&quot;id&quot;:10,&quot;email&quot;:&quot;byron.fields@reqres.in&quot;,&quot;first_name&quot;:&quot;Byron&quot;,&quot;last_name&quot;:&quot;Fields&quot;,&quot;avatar&quot;:&quot;https://reqres.in/img/faces/10-image.jpg&quot;},{&quot;id&quot;:11,&quot;email&quot;:&quot;george.edwards@reqres.in&quot;,&quot;first_name&quot;:&quot;George&quot;,&quot;last_name&quot;:&quot;Edwards&quot;,&quot;avatar&quot;:&quot;https://reqres.in/img/faces/11-image.jpg&quot;},{&quot;id&quot;:12,&quot;email&quot;:&quot;rachel.howell@reqres.in&quot;,&quot;first_name&quot;:&quot;Rachel&quot;,&quot;last_name&quot;:&quot;Howell&quot;,&quot;avatar&quot;:&quot;https://reqres.in/img/faces/12-image.jpg&quot;}],&quot;support&quot;:{&quot;url&quot;:&quot;https://reqres.in/#support-heading&quot;,&quot;text&quot;:&quot;To keep ReqRes free, contributions towards server costs are appreciated!&quot;}}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">print response</span>
+  
+  <span class="lead-duration duration">110ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-4">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-4" class="collapse collapsable-details">
+        <pre>14:03:06.736 [print] {
+  &quot;per_page&quot;: 6,
+  &quot;total&quot;: 12,
+  &quot;data&quot;: [
+    {
+      &quot;last_name&quot;: &quot;Lawson&quot;,
+      &quot;id&quot;: 7,
+      &quot;avatar&quot;: &quot;https://reqres.in/img/faces/7-image.jpg&quot;,
+      &quot;first_name&quot;: &quot;Michael&quot;,
+      &quot;email&quot;: &quot;michael.lawson@reqres.in&quot;
+    },
+    {
+      &quot;last_name&quot;: &quot;Ferguson&quot;,
+      &quot;id&quot;: 8,
+      &quot;avatar&quot;: &quot;https://reqres.in/img/faces/8-image.jpg&quot;,
+      &quot;first_name&quot;: &quot;Lindsay&quot;,
+      &quot;email&quot;: &quot;lindsay.ferguson@reqres.in&quot;
+    },
+    {
+      &quot;last_name&quot;: &quot;Funke&quot;,
+      &quot;id&quot;: 9,
+      &quot;avatar&quot;: &quot;https://reqres.in/img/faces/9-image.jpg&quot;,
+      &quot;first_name&quot;: &quot;Tobias&quot;,
+      &quot;email&quot;: &quot;tobias.funke@reqres.in&quot;
+    },
+    {
+      &quot;last_name&quot;: &quot;Fields&quot;,
+      &quot;id&quot;: 10,
+      &quot;avatar&quot;: &quot;https://reqres.in/img/faces/10-image.jpg&quot;,
+      &quot;first_name&quot;: &quot;Byron&quot;,
+      &quot;email&quot;: &quot;byron.fields@reqres.in&quot;
+    },
+    {
+      &quot;last_name&quot;: &quot;Edwards&quot;,
+      &quot;id&quot;: 11,
+      &quot;avatar&quot;: &quot;https://reqres.in/img/faces/11-image.jpg&quot;,
+      &quot;first_name&quot;: &quot;George&quot;,
+      &quot;email&quot;: &quot;george.edwards@reqres.in&quot;
+    },
+    {
+      &quot;last_name&quot;: &quot;Howell&quot;,
+      &quot;id&quot;: 12,
+      &quot;avatar&quot;: &quot;https://reqres.in/img/faces/12-image.jpg&quot;,
+      &quot;first_name&quot;: &quot;Rachel&quot;,
+      &quot;email&quot;: &quot;rachel.howell@reqres.in&quot;
+    }
+  ],
+  &quot;page&quot;: 2,
+  &quot;total_pages&quot;: 2,
+  &quot;support&quot;: {
+    &quot;text&quot;: &quot;To keep ReqRes free, contributions towards server costs are appreciated!&quot;,
+    &quot;url&quot;: &quot;https://reqres.in/#support-heading&quot;
+  }
+}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">print responseStatus</span>
+  
+  <span class="lead-duration duration">005ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-5">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-5" class="collapse collapsable-details">
+        <pre>14:03:06.742 [print] 200</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">print responseTime</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-6">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-6" class="collapse collapsable-details">
+        <pre>14:03:06.742 [print] 628</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">print responseHeaders</span>
+  
+  <span class="lead-duration duration">001ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-7">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-7" class="collapse collapsable-details">
+        <pre>14:03:06.744 [print] {
+  &quot;Date&quot;: [
+    &quot;Fri, 13 May 2022 11:03:06 GMT&quot;
+  ],
+  &quot;Content-Type&quot;: [
+    &quot;application/json; charset=utf-8&quot;
+  ],
+  &quot;Transfer-Encoding&quot;: [
+    &quot;chunked&quot;
+  ],
+  &quot;Connection&quot;: [
+    &quot;keep-alive&quot;
+  ],
+  &quot;X-Powered-By&quot;: [
+    &quot;Express&quot;
+  ],
+  &quot;Access-Control-Allow-Origin&quot;: [
+    &quot;*&quot;
+  ],
+  &quot;Etag&quot;: [
+    &quot;W/\&quot;406-ut0vzoCuidvyMf8arZpMpJ6ZRDw\&quot;&quot;
+  ],
+  &quot;Via&quot;: [
+    &quot;1.1 vegur&quot;
+  ],
+  &quot;Cache-Control&quot;: [
+    &quot;max-age=14400&quot;
+  ],
+  &quot;CF-Cache-Status&quot;: [
+    &quot;HIT&quot;
+  ],
+  &quot;Age&quot;: [
+    &quot;1679&quot;
+  ],
+  &quot;Expect-CT&quot;: [
+    &quot;max-age=604800, report-uri=\&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\&quot;&quot;
+  ],
+  &quot;Report-To&quot;: [
+    &quot;{\&quot;endpoints\&quot;:[{\&quot;url\&quot;:\&quot;https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=y95p%2FPRkFS2wQhPqAk3a2NxHN%2BjgAcZ%2B2vbg8TLMn9PT6c9VkNR9%2FHUuo%2BqpiudKuzR8hFhHnj%2B1ViN8aQ3jQudyZKHBP%2FN6lCV25cn8M7G7XnBQikseQzew3ag%3D\&quot;}],\&quot;group\&quot;:\&quot;cf-nel\&quot;,\&quot;max_age\&quot;:604800}&quot;
+  ],
+  &quot;NEL&quot;: [
+    &quot;{\&quot;success_fraction\&quot;:0,\&quot;report_to\&quot;:\&quot;cf-nel\&quot;,\&quot;max_age\&quot;:604800}&quot;
+  ],
+  &quot;Vary&quot;: [
+    &quot;Accept-Encoding&quot;
+  ],
+  &quot;Server&quot;: [
+    &quot;cloudflare&quot;
+  ],
+  &quot;CF-RAY&quot;: [
+    &quot;70aae7d9695f777d-LHR&quot;
+  ],
+  &quot;alt-svc&quot;: [
+    &quot;h3=\&quot;:443\&quot;; ma=86400, h3-29=\&quot;:443\&quot;; ma=86400&quot;
+  ]
+}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">print responseCookies</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-8">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-8" class="collapse collapsable-details">
+        <pre>14:03:06.753 [print]</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                  
+<div class="element">
+      <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_tests-Get-feature_2.html">tests/Get.feature</a>
+    </div>
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">1s 451ms</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-9">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Get Demo 2</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-9" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-10">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-10" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path '/users?page=2'</span>
+  
+  <span class="lead-duration duration">006ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method GET</span>
+  
+  <span class="lead-duration duration">1s 324ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-11">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-11" class="collapse collapsable-details">
+        <pre>14:03:05.894 request:
+1 &gt; GET https://reqres.in/api/users%3Fpage=2
+1 &gt; Accept: application/json
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: reqres.in
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.11)
+
+14:03:06.550 response time in milliseconds: 653.05
+1 &lt; 200
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; CF-Cache-Status: MISS
+1 &lt; CF-RAY: 70aae7d96a5ef3ef-LHR
+1 &lt; Cache-Control: max-age=14400
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Fri, 13 May 2022 11:03:06 GMT
+1 &lt; Etag: W/&quot;2c1-N6Rqerxquq2kgQhL51EiSg4x0R8&quot;
+1 &lt; Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
+1 &lt; NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=DSOsYbHhX%2B0Ur3rNy%2BIs04jAc7SBexJnNRngd5cvIiXUeTBxKUnO7rvsLR%2F%2BERGMVUn6jEiiU87SCh%2B2zy%2B2RwGr6ocKrB3Wuz7%2FgW3cZkNtxDgDWKDB7JfmM00%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; Server: cloudflare
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Vary: Accept-Encoding
+1 &lt; Via: 1.1 vegur
+1 &lt; X-Powered-By: Express
+1 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400
+{&quot;page&quot;:1,&quot;per_page&quot;:6,&quot;total&quot;:12,&quot;total_pages&quot;:2,&quot;data&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;cerulean&quot;,&quot;year&quot;:2000,&quot;color&quot;:&quot;#98B2D1&quot;,&quot;pantone_value&quot;:&quot;15-4020&quot;},{&quot;id&quot;:2,&quot;name&quot;:&quot;fuchsia rose&quot;,&quot;year&quot;:2001,&quot;color&quot;:&quot;#C74375&quot;,&quot;pantone_value&quot;:&quot;17-2031&quot;},{&quot;id&quot;:3,&quot;name&quot;:&quot;true red&quot;,&quot;year&quot;:2002,&quot;color&quot;:&quot;#BF1932&quot;,&quot;pantone_value&quot;:&quot;19-1664&quot;},{&quot;id&quot;:4,&quot;name&quot;:&quot;aqua sky&quot;,&quot;year&quot;:2003,&quot;color&quot;:&quot;#7BC4C4&quot;,&quot;pantone_value&quot;:&quot;14-4811&quot;},{&quot;id&quot;:5,&quot;name&quot;:&quot;tigerlily&quot;,&quot;year&quot;:2004,&quot;color&quot;:&quot;#E2583E&quot;,&quot;pantone_value&quot;:&quot;17-1456&quot;},{&quot;id&quot;:6,&quot;name&quot;:&quot;blue turquoise&quot;,&quot;year&quot;:2005,&quot;color&quot;:&quot;#53B0AE&quot;,&quot;pantone_value&quot;:&quot;15-5217&quot;}],&quot;support&quot;:{&quot;url&quot;:&quot;https://reqres.in/#support-heading&quot;,&quot;text&quot;:&quot;To keep ReqRes free, contributions towards server costs are appreciated!&quot;}}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">print response</span>
+  
+  <span class="lead-duration duration">120ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-12">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-12" class="collapse collapsable-details">
+        <pre>14:03:06.747 [print] {
+  &quot;per_page&quot;: 6,
+  &quot;total&quot;: 12,
+  &quot;data&quot;: [
+    {
+      &quot;color&quot;: &quot;#98B2D1&quot;,
+      &quot;year&quot;: 2000,
+      &quot;name&quot;: &quot;cerulean&quot;,
+      &quot;id&quot;: 1,
+      &quot;pantone_value&quot;: &quot;15-4020&quot;
+    },
+    {
+      &quot;color&quot;: &quot;#C74375&quot;,
+      &quot;year&quot;: 2001,
+      &quot;name&quot;: &quot;fuchsia rose&quot;,
+      &quot;id&quot;: 2,
+      &quot;pantone_value&quot;: &quot;17-2031&quot;
+    },
+    {
+      &quot;color&quot;: &quot;#BF1932&quot;,
+      &quot;year&quot;: 2002,
+      &quot;name&quot;: &quot;true red&quot;,
+      &quot;id&quot;: 3,
+      &quot;pantone_value&quot;: &quot;19-1664&quot;
+    },
+    {
+      &quot;color&quot;: &quot;#7BC4C4&quot;,
+      &quot;year&quot;: 2003,
+      &quot;name&quot;: &quot;aqua sky&quot;,
+      &quot;id&quot;: 4,
+      &quot;pantone_value&quot;: &quot;14-4811&quot;
+    },
+    {
+      &quot;color&quot;: &quot;#E2583E&quot;,
+      &quot;year&quot;: 2004,
+      &quot;name&quot;: &quot;tigerlily&quot;,
+      &quot;id&quot;: 5,
+      &quot;pantone_value&quot;: &quot;17-1456&quot;
+    },
+    {
+      &quot;color&quot;: &quot;#53B0AE&quot;,
+      &quot;year&quot;: 2005,
+      &quot;name&quot;: &quot;blue turquoise&quot;,
+      &quot;id&quot;: 6,
+      &quot;pantone_value&quot;: &quot;15-5217&quot;
+    }
+  ],
+  &quot;page&quot;: 1,
+  &quot;total_pages&quot;: 2,
+  &quot;support&quot;: {
+    &quot;text&quot;: &quot;To keep ReqRes free, contributions towards server costs are appreciated!&quot;,
+    &quot;url&quot;: &quot;https://reqres.in/#support-heading&quot;
+  }
+}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                  
+<div class="element">
+      <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_tests-Get-feature_2.html">tests/Get.feature</a>
+    </div>
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">1s 469ms</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-13">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Get Demo 3</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-13" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-14">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-14" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path '/users'</span>
+  
+  <span class="lead-duration duration">005ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">param page = 2</span>
+  
+  <span class="lead-duration duration">005ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method GET</span>
+  
+  <span class="lead-duration duration">1s 332ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-15">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-15" class="collapse collapsable-details">
+        <pre>14:03:05.896 request:
+1 &gt; GET https://reqres.in/api/users?page=2
+1 &gt; Accept: application/json
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: reqres.in
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.11)
+
+14:03:06.529 response time in milliseconds: 625.46
+1 &lt; 200
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Age: 1679
+1 &lt; CF-Cache-Status: HIT
+1 &lt; CF-RAY: 70aae7d95ffa88b9-LHR
+1 &lt; Cache-Control: max-age=14400
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Fri, 13 May 2022 11:03:06 GMT
+1 &lt; Etag: W/&quot;406-ut0vzoCuidvyMf8arZpMpJ6ZRDw&quot;
+1 &lt; Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
+1 &lt; NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=RrbdtJec9W%2F9uHvfZZGmReij8xP0O%2Fx%2BpvwilCbMDuEFkgyfsnvzJXnpp%2BSckCdWofTWgXMXWVzyJYjlLSAqN4zgJ0qON8CDzUHq3JNzAs1%2F1C6nTvfTwV7%2BG9M%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; Server: cloudflare
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Vary: Accept-Encoding
+1 &lt; Via: 1.1 vegur
+1 &lt; X-Powered-By: Express
+1 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400
+{&quot;page&quot;:2,&quot;per_page&quot;:6,&quot;total&quot;:12,&quot;total_pages&quot;:2,&quot;data&quot;:[{&quot;id&quot;:7,&quot;email&quot;:&quot;michael.lawson@reqres.in&quot;,&quot;first_name&quot;:&quot;Michael&quot;,&quot;last_name&quot;:&quot;Lawson&quot;,&quot;avatar&quot;:&quot;https://reqres.in/img/faces/7-image.jpg&quot;},{&quot;id&quot;:8,&quot;email&quot;:&quot;lindsay.ferguson@reqres.in&quot;,&quot;first_name&quot;:&quot;Lindsay&quot;,&quot;last_name&quot;:&quot;Ferguson&quot;,&quot;avatar&quot;:&quot;https://reqres.in/img/faces/8-image.jpg&quot;},{&quot;id&quot;:9,&quot;email&quot;:&quot;tobias.funke@reqres.in&quot;,&quot;first_name&quot;:&quot;Tobias&quot;,&quot;last_name&quot;:&quot;Funke&quot;,&quot;avatar&quot;:&quot;https://reqres.in/img/faces/9-image.jpg&quot;},{&quot;id&quot;:10,&quot;email&quot;:&quot;byron.fields@reqres.in&quot;,&quot;first_name&quot;:&quot;Byron&quot;,&quot;last_name&quot;:&quot;Fields&quot;,&quot;avatar&quot;:&quot;https://reqres.in/img/faces/10-image.jpg&quot;},{&quot;id&quot;:11,&quot;email&quot;:&quot;george.edwards@reqres.in&quot;,&quot;first_name&quot;:&quot;George&quot;,&quot;last_name&quot;:&quot;Edwards&quot;,&quot;avatar&quot;:&quot;https://reqres.in/img/faces/11-image.jpg&quot;},{&quot;id&quot;:12,&quot;email&quot;:&quot;rachel.howell@reqres.in&quot;,&quot;first_name&quot;:&quot;Rachel&quot;,&quot;last_name&quot;:&quot;Howell&quot;,&quot;avatar&quot;:&quot;https://reqres.in/img/faces/12-image.jpg&quot;}],&quot;support&quot;:{&quot;url&quot;:&quot;https://reqres.in/#support-heading&quot;,&quot;text&quot;:&quot;To keep ReqRes free, contributions towards server costs are appreciated!&quot;}}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">print response</span>
+  
+  <span class="lead-duration duration">126ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-16">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-16" class="collapse collapsable-details">
+        <pre>14:03:06.754 [print] {
+  &quot;per_page&quot;: 6,
+  &quot;total&quot;: 12,
+  &quot;data&quot;: [
+    {
+      &quot;last_name&quot;: &quot;Lawson&quot;,
+      &quot;id&quot;: 7,
+      &quot;avatar&quot;: &quot;https://reqres.in/img/faces/7-image.jpg&quot;,
+      &quot;first_name&quot;: &quot;Michael&quot;,
+      &quot;email&quot;: &quot;michael.lawson@reqres.in&quot;
+    },
+    {
+      &quot;last_name&quot;: &quot;Ferguson&quot;,
+      &quot;id&quot;: 8,
+      &quot;avatar&quot;: &quot;https://reqres.in/img/faces/8-image.jpg&quot;,
+      &quot;first_name&quot;: &quot;Lindsay&quot;,
+      &quot;email&quot;: &quot;lindsay.ferguson@reqres.in&quot;
+    },
+    {
+      &quot;last_name&quot;: &quot;Funke&quot;,
+      &quot;id&quot;: 9,
+      &quot;avatar&quot;: &quot;https://reqres.in/img/faces/9-image.jpg&quot;,
+      &quot;first_name&quot;: &quot;Tobias&quot;,
+      &quot;email&quot;: &quot;tobias.funke@reqres.in&quot;
+    },
+    {
+      &quot;last_name&quot;: &quot;Fields&quot;,
+      &quot;id&quot;: 10,
+      &quot;avatar&quot;: &quot;https://reqres.in/img/faces/10-image.jpg&quot;,
+      &quot;first_name&quot;: &quot;Byron&quot;,
+      &quot;email&quot;: &quot;byron.fields@reqres.in&quot;
+    },
+    {
+      &quot;last_name&quot;: &quot;Edwards&quot;,
+      &quot;id&quot;: 11,
+      &quot;avatar&quot;: &quot;https://reqres.in/img/faces/11-image.jpg&quot;,
+      &quot;first_name&quot;: &quot;George&quot;,
+      &quot;email&quot;: &quot;george.edwards@reqres.in&quot;
+    },
+    {
+      &quot;last_name&quot;: &quot;Howell&quot;,
+      &quot;id&quot;: 12,
+      &quot;avatar&quot;: &quot;https://reqres.in/img/faces/12-image.jpg&quot;,
+      &quot;first_name&quot;: &quot;Rachel&quot;,
+      &quot;email&quot;: &quot;rachel.howell@reqres.in&quot;
+    }
+  ],
+  &quot;page&quot;: 2,
+  &quot;total_pages&quot;: 2,
+  &quot;support&quot;: {
+    &quot;text&quot;: &quot;To keep ReqRes free, contributions towards server costs are appreciated!&quot;,
+    &quot;url&quot;: &quot;https://reqres.in/#support-heading&quot;
+  }
+}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                  
+<div class="element">
+      <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_tests-Get-feature_2.html">tests/Get.feature</a>
+    </div>
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">500ms</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-17">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Get Demo 4</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-17" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-18">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-18" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path '/users'</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">param page = 2</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method GET</span>
+  
+  <span class="lead-duration duration">344ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-19">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-19" class="collapse collapsable-details">
+        <pre>14:03:06.572 request:
+1 &gt; GET https://reqres.in/api/users?page=2
+1 &gt; Accept: application/json
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: reqres.in
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.11)
+
+14:03:06.912 response time in milliseconds: 338.56
+1 &lt; 200
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Age: 112
+1 &lt; CF-Cache-Status: HIT
+1 &lt; CF-RAY: 70aae7dbdf0472de-LHR
+1 &lt; Cache-Control: max-age=14400
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Fri, 13 May 2022 11:03:06 GMT
+1 &lt; Etag: W/&quot;406-ut0vzoCuidvyMf8arZpMpJ6ZRDw&quot;
+1 &lt; Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
+1 &lt; NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=hrpbNM2aTUwiehLPVGE7SMWG1TbSAHD%2FI1ExeTwQx%2Bs1fPvoJ8ZJFu30EwO2nf%2FlDCPC5x8RUmgyFZiQ8hWNF65W8uMfGU3M1qAN3tpZp68DraIpZUHH3Y4eQcE%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; Server: cloudflare
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Vary: Accept-Encoding
+1 &lt; Via: 1.1 vegur
+1 &lt; X-Powered-By: Express
+1 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400
+{&quot;page&quot;:2,&quot;per_page&quot;:6,&quot;total&quot;:12,&quot;total_pages&quot;:2,&quot;data&quot;:[{&quot;id&quot;:7,&quot;email&quot;:&quot;michael.lawson@reqres.in&quot;,&quot;first_name&quot;:&quot;Michael&quot;,&quot;last_name&quot;:&quot;Lawson&quot;,&quot;avatar&quot;:&quot;https://reqres.in/img/faces/7-image.jpg&quot;},{&quot;id&quot;:8,&quot;email&quot;:&quot;lindsay.ferguson@reqres.in&quot;,&quot;first_name&quot;:&quot;Lindsay&quot;,&quot;last_name&quot;:&quot;Ferguson&quot;,&quot;avatar&quot;:&quot;https://reqres.in/img/faces/8-image.jpg&quot;},{&quot;id&quot;:9,&quot;email&quot;:&quot;tobias.funke@reqres.in&quot;,&quot;first_name&quot;:&quot;Tobias&quot;,&quot;last_name&quot;:&quot;Funke&quot;,&quot;avatar&quot;:&quot;https://reqres.in/img/faces/9-image.jpg&quot;},{&quot;id&quot;:10,&quot;email&quot;:&quot;byron.fields@reqres.in&quot;,&quot;first_name&quot;:&quot;Byron&quot;,&quot;last_name&quot;:&quot;Fields&quot;,&quot;avatar&quot;:&quot;https://reqres.in/img/faces/10-image.jpg&quot;},{&quot;id&quot;:11,&quot;email&quot;:&quot;george.edwards@reqres.in&quot;,&quot;first_name&quot;:&quot;George&quot;,&quot;last_name&quot;:&quot;Edwards&quot;,&quot;avatar&quot;:&quot;https://reqres.in/img/faces/11-image.jpg&quot;},{&quot;id&quot;:12,&quot;email&quot;:&quot;rachel.howell@reqres.in&quot;,&quot;first_name&quot;:&quot;Rachel&quot;,&quot;last_name&quot;:&quot;Howell&quot;,&quot;avatar&quot;:&quot;https://reqres.in/img/faces/12-image.jpg&quot;}],&quot;support&quot;:{&quot;url&quot;:&quot;https://reqres.in/#support-heading&quot;,&quot;text&quot;:&quot;To keep ReqRes free, contributions towards server costs are appreciated!&quot;}}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">print response</span>
+  
+  <span class="lead-duration duration">005ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-20">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-20" class="collapse collapsable-details">
+        <pre>14:03:06.919 [print] {
+  &quot;per_page&quot;: 6,
+  &quot;total&quot;: 12,
+  &quot;data&quot;: [
+    {
+      &quot;last_name&quot;: &quot;Lawson&quot;,
+      &quot;id&quot;: 7,
+      &quot;avatar&quot;: &quot;https://reqres.in/img/faces/7-image.jpg&quot;,
+      &quot;first_name&quot;: &quot;Michael&quot;,
+      &quot;email&quot;: &quot;michael.lawson@reqres.in&quot;
+    },
+    {
+      &quot;last_name&quot;: &quot;Ferguson&quot;,
+      &quot;id&quot;: 8,
+      &quot;avatar&quot;: &quot;https://reqres.in/img/faces/8-image.jpg&quot;,
+      &quot;first_name&quot;: &quot;Lindsay&quot;,
+      &quot;email&quot;: &quot;lindsay.ferguson@reqres.in&quot;
+    },
+    {
+      &quot;last_name&quot;: &quot;Funke&quot;,
+      &quot;id&quot;: 9,
+      &quot;avatar&quot;: &quot;https://reqres.in/img/faces/9-image.jpg&quot;,
+      &quot;first_name&quot;: &quot;Tobias&quot;,
+      &quot;email&quot;: &quot;tobias.funke@reqres.in&quot;
+    },
+    {
+      &quot;last_name&quot;: &quot;Fields&quot;,
+      &quot;id&quot;: 10,
+      &quot;avatar&quot;: &quot;https://reqres.in/img/faces/10-image.jpg&quot;,
+      &quot;first_name&quot;: &quot;Byron&quot;,
+      &quot;email&quot;: &quot;byron.fields@reqres.in&quot;
+    },
+    {
+      &quot;last_name&quot;: &quot;Edwards&quot;,
+      &quot;id&quot;: 11,
+      &quot;avatar&quot;: &quot;https://reqres.in/img/faces/11-image.jpg&quot;,
+      &quot;first_name&quot;: &quot;George&quot;,
+      &quot;email&quot;: &quot;george.edwards@reqres.in&quot;
+    },
+    {
+      &quot;last_name&quot;: &quot;Howell&quot;,
+      &quot;id&quot;: 12,
+      &quot;avatar&quot;: &quot;https://reqres.in/img/faces/12-image.jpg&quot;,
+      &quot;first_name&quot;: &quot;Rachel&quot;,
+      &quot;email&quot;: &quot;rachel.howell@reqres.in&quot;
+    }
+  ],
+  &quot;page&quot;: 2,
+  &quot;total_pages&quot;: 2,
+  &quot;support&quot;: {
+    &quot;text&quot;: &quot;To keep ReqRes free, contributions towards server costs are appreciated!&quot;,
+    &quot;url&quot;: &quot;https://reqres.in/#support-heading&quot;
+  }
+}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.data[0].first_name != null</span>
+  
+  <span class="lead-duration duration">025ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">assert response.data.length == 6</span>
+  
+  <span class="lead-duration duration">114ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match $.data[3].id == 10</span>
+  
+  <span class="lead-duration duration">005ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.data[4].last_name == 'Edwards'</span>
+  
+  <span class="lead-duration duration">004ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                  
+<div class="element">
+      <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_tests-Put-feature_5.html">tests/Put.feature</a>
+    </div>
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">325ms</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-21">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Put Demo 1</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-21" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-22">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-22" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url 'https://reqres.in/api/users/2'</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-23">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-23" class="collapse collapsable-details">
+        <pre>14:03:07.162 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request {&quot;name&quot;: &quot;morpheus&quot;,  &quot;job&quot;: &quot;zion resident&quot;}</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method PUT</span>
+  
+  <span class="lead-duration duration">324ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-24">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-24" class="collapse collapsable-details">
+        <pre>14:03:07.166 request:
+1 &gt; PUT https://reqres.in/api/users/2
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 41
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: reqres.in
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.11)
+{&quot;name&quot;:&quot;morpheus&quot;,&quot;job&quot;:&quot;zion resident&quot;}
+
+14:03:07.488 response time in milliseconds: 320.53
+1 &lt; 200
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; CF-Cache-Status: DYNAMIC
+1 &lt; CF-RAY: 70aae7df3f3588bb-LHR
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Fri, 13 May 2022 11:03:07 GMT
+1 &lt; Etag: W/&quot;50-dc5zSGkbQ53wo7Nj/ThAeUbnTAc&quot;
+1 &lt; Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
+1 &lt; NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=9Q2nI3QQ7SOYWFYSACBTdy0ckFaZ5Ig2u2Fz%2BOj48MHNjLip94e81m8L0fOU19lxHTBf4ud9utR9fVRUdyr7EJEil3fkM1XKU%2BgTdljUq85V%2FmTsmVr91%2FPLno8%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; Server: cloudflare
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Vary: Accept-Encoding
+1 &lt; Via: 1.1 vegur
+1 &lt; X-Powered-By: Express
+1 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400
+{&quot;name&quot;:&quot;morpheus&quot;,&quot;job&quot;:&quot;zion resident&quot;,&quot;updatedAt&quot;:&quot;2022-05-13T11:03:07.428Z&quot;}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">print response</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-25">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-25" class="collapse collapsable-details">
+        <pre>14:03:07.488 [print] {
+  &quot;name&quot;: &quot;morpheus&quot;,
+  &quot;job&quot;: &quot;zion resident&quot;,
+  &quot;updatedAt&quot;: &quot;2022-05-13T11:03:07.428Z&quot;
+}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+<br>
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

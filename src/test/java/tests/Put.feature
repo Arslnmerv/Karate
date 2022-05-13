@@ -1,3 +1,4 @@
+@tag
 Feature: PUT API Demo
 
   Scenario: Put Demo 1

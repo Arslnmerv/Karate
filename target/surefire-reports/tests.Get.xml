@@ -1,0 +1,93 @@
+<testsuite failures="0" name="tests/Get.feature" skipped="0" tests="4" time="4.947834">
+  <testcase classname="tests.Get" name="Get Demo 1" time="1.486737">
+    <system-out>* url 'https://reqres.in/api' ............................................. passed
+* header Accept = 'application/json' ...................................... passed
+Given url  'https://reqres.in/api/users?page=2' ........................... passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+And print response ........................................................ passed
+And print responseStatus .................................................. passed
+And print responseTime .................................................... passed
+And print responseHeaders ................................................. passed
+And print responseCookies ................................................. passed</system-out>
+  </testcase>
+  <testcase classname="tests.Get" name="Get Demo 2" time="1.472648">
+    <system-out>* url 'https://reqres.in/api' ............................................. passed
+* header Accept = 'application/json' ...................................... passed
+Given url  'https://reqres.in/api/users?page=2' ........................... passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+And print response ........................................................ passed
+And print responseStatus .................................................. passed
+And print responseTime .................................................... passed
+And print responseHeaders ................................................. passed
+And print responseCookies ................................................. passed
+* url 'https://reqres.in/api' ............................................. passed
+* header Accept = 'application/json' ...................................... passed
+Given path '/users?page=2' ................................................ passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+And print response ........................................................ passed</system-out>
+  </testcase>
+  <testcase classname="tests.Get" name="Get Demo 3" time="1.486786">
+    <system-out>* url 'https://reqres.in/api' ............................................. passed
+* header Accept = 'application/json' ...................................... passed
+Given url  'https://reqres.in/api/users?page=2' ........................... passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+And print response ........................................................ passed
+And print responseStatus .................................................. passed
+And print responseTime .................................................... passed
+And print responseHeaders ................................................. passed
+And print responseCookies ................................................. passed
+* url 'https://reqres.in/api' ............................................. passed
+* header Accept = 'application/json' ...................................... passed
+Given path '/users?page=2' ................................................ passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+And print response ........................................................ passed
+* url 'https://reqres.in/api' ............................................. passed
+* header Accept = 'application/json' ...................................... passed
+Given path '/users' ....................................................... passed
+And param page = 2 ........................................................ passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+And print response ........................................................ passed</system-out>
+  </testcase>
+  <testcase classname="tests.Get" name="Get Demo 4" time="0.501663">
+    <system-out>* url 'https://reqres.in/api' ............................................. passed
+* header Accept = 'application/json' ...................................... passed
+Given url  'https://reqres.in/api/users?page=2' ........................... passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+And print response ........................................................ passed
+And print responseStatus .................................................. passed
+And print responseTime .................................................... passed
+And print responseHeaders ................................................. passed
+And print responseCookies ................................................. passed
+* url 'https://reqres.in/api' ............................................. passed
+* header Accept = 'application/json' ...................................... passed
+Given path '/users?page=2' ................................................ passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+And print response ........................................................ passed
+* url 'https://reqres.in/api' ............................................. passed
+* header Accept = 'application/json' ...................................... passed
+Given path '/users' ....................................................... passed
+And param page = 2 ........................................................ passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+And print response ........................................................ passed
+* url 'https://reqres.in/api' ............................................. passed
+* header Accept = 'application/json' ...................................... passed
+Given path '/users' ....................................................... passed
+And param page = 2 ........................................................ passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+And print response ........................................................ passed
+And match response.data[0].first_name != null ............................. passed
+And assert response.data.length == 6 ...................................... passed
+And match $.data[3].id == 10 .............................................. passed
+And match response.data[4].last_name == 'Edwards' ......................... passed</system-out>
+  </testcase>
+</testsuite>

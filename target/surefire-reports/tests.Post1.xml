@@ -1,0 +1,21 @@
+<testsuite failures="0" name="tests/Post1.feature" skipped="0" tests="1" time="0.61905">
+  <testcase classname="tests.Post1" name="Post with read request body &amp; response body from file" time="0.61905">
+    <system-out>* url 'https://reqres.in/api' ............................................. passed
+* header Accept = 'application/json' ...................................... passed
+* def expectedOutput = read("response1.json") ............................. passed
+Given path  '/users' ...................................................... passed
+And def projectPath = karate.properties['user.dir'] ....................... passed
+And print projectPath ..................................................... passed
+And def filePath = projectPath+'src/test/java/data/request1.json' ......... passed
+And print filePath ........................................................ passed
+And json requestBody1 =  read('request1.json') ............................ passed
+And request requestBody1 .................................................. passed
+And print requestBody1 .................................................... passed
+When method POST .......................................................... passed
+Then status 201 ........................................................... passed
+And match response == expectedOutput ...................................... passed
+And match $ == expectedOutput ............................................. passed
+And match $ contains { name:'murphy'} ..................................... passed
+And print response ........................................................ passed</system-out>
+  </testcase>
+</testsuite>

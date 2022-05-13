@@ -1,3 +1,4 @@
+@tag
 Feature: Get API Demo
 
   Background:

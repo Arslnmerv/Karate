@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="en">
+      
+    <head>
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            
+        <meta charset="utf-8">
+            
+        <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+            
+        <link href="res/bootstrap.min.css" rel="stylesheet" type="text/css">
+            
+        <link href="res/karate-report.css" rel="stylesheet" type="text/css">
+            
+        <link href="favicon.ico" rel="shortcut icon">
+            <script src="res/jquery.min.js" type="text/javascript"></script>
+    <script src="res/jquery.tablesorter.min.js" type="text/javascript"></script>
+    <script src="res/bootstrap.min.js" type="text/javascript"></script>
+    <script src="res/karate-report.js" type="text/javascript"></script>
+    
+        <title>tests.Get</title>
+          
+    </head>
+      
+    <body>
+            
+        <div id="root-container">
+                  
+            <div id="leftnav">
+                        
+                <div class="nav-logo">
+                              <a href="karate-summary.html">
+            <img alt="Karate" src="res/karate-logo.svg">
+          </a>
+          
+                    <div class="nav-count">
+                                    
+                        <div class="bg-success" id="nav-pass">4</div>
+                                    
+                        <div class="bg-danger" id="nav-fail">0</div>
+                                  
+                    </div>
+                            
+                </div>
+                        
+                <div id="nav-type">Scenarios</div>
+                         
+        
+                <div id="nav-date">2022-05-13 02:03:07 PM</div>
+                        
+      
+                <div class="nav-container">
+                    <div class="nav-item passed">
+                        <a href="#[1:9]">[1:9] Get Demo 1 </a>
+                    </div>
+                    <div class="nav-item passed">
+                        <a href="#[2:20]">[2:20] Get Demo 2 </a>
+                    </div>
+                    <div class="nav-item passed">
+                        <a href="#[3:27]">[3:27] Get Demo 3 </a>
+                    </div>
+                    <div class="nav-item passed">
+                        <a href="#[4:35]">[4:35] Get Demo 4 </a>
+                    </div>
+                </div>
+            </div>
+                  
+            <div id="content">
+                      
+                <div class="page-heading alert alert-primary">
+                    <a href="karate-summary.html">Summary</a><span class="feature-label">|</span><a href="karate-tags.html">Tags</a><span class="feature-label">|</span><span class="feature-label">Feature:</span><span class="feature-name">tests/Get.feature</span><span class="feature-description">Get API Demo</span>
+                </div>
+                <div class="scenario">
+                    <div class="scenario-heading" id="[1:9]">
+                        <div class="heading-container">
+                            <div class="scenario-tags">
+                                <a class="badge badge-primary" href="karate-tags.html">tag</a>
+                            </div>
+                            <span class="scenario-keyword">Scenario: [1:9]</span><span class="scenario-name">Get Demo 1 </span>
+                        </div>
+                        <div class="scenario-time passed">ms: 1487</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="[1:9]bg">
+                            <div class="step-ref bg-step">&gt;&gt;</div>
+                            <div class="step-cell passed">Background:</div>
+                        </div>
+                        <div class="time-cell passed"></div>
+                    </div>
+                    <div class="step-row" data-parent="[1:9]bg">
+                        <div class="step-container" id="1">
+                            <div class="step-ref bg-step">1</div>
+                            <div class="step-cell passed">* url 'https://reqres.in/api'</div>
+                        </div>
+                        <div class="time-cell passed">22</div>
+                    </div>
+                    <div class="preformatted" data-parent="1">14:03:05.240 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js</div>
+                    <div class="step-row" data-parent="[1:9]bg">
+                        <div class="step-container" id="2">
+                            <div class="step-ref bg-step">2</div>
+                            <div class="step-cell passed">* header Accept = 'application/json'</div>
+                        </div>
+                        <div class="time-cell passed">16</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="3">
+                            <div class="step-ref passed">3</div>
+                            <div class="step-cell passed">Given url  'https://reqres.in/api/users?page=2'</div>
+                        </div>
+                        <div class="time-cell passed">9</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="4">
+                            <div class="step-ref passed">4</div>
+                            <div class="step-cell passed">When method GET</div>
+                        </div>
+                        <div class="time-cell passed">1320</div>
+                    </div>
+                    <div class="preformatted" data-parent="4">14:03:05.898 request:
+1 &gt; GET https://reqres.in/api/users?page=2
+1 &gt; Accept: application/json
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: reqres.in
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.11)
+
+14:03:06.530 response time in milliseconds: 628.08
+1 &lt; 200
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Age: 1679
+1 &lt; CF-Cache-Status: HIT
+1 &lt; CF-RAY: 70aae7d9695f777d-LHR
+1 &lt; Cache-Control: max-age=14400
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Fri, 13 May 2022 11:03:06 GMT
+1 &lt; Etag: W/"406-ut0vzoCuidvyMf8arZpMpJ6ZRDw"
+1 &lt; Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 &lt; NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 &lt; Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=y95p%2FPRkFS2wQhPqAk3a2NxHN%2BjgAcZ%2B2vbg8TLMn9PT6c9VkNR9%2FHUuo%2BqpiudKuzR8hFhHnj%2B1ViN8aQ3jQudyZKHBP%2FN6lCV25cn8M7G7XnBQikseQzew3ag%3D"}],"group":"cf-nel","max_age":604800}
+1 &lt; Server: cloudflare
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Vary: Accept-Encoding
+1 &lt; Via: 1.1 vegur
+1 &lt; X-Powered-By: Express
+1 &lt; alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+{"page":2,"per_page":6,"total":12,"total_pages":2,"data":[{"id":7,"email":"michael.lawson@reqres.in","first_name":"Michael","last_name":"Lawson","avatar":"https://reqres.in/img/faces/7-image.jpg"},{"id":8,"email":"lindsay.ferguson@reqres.in","first_name":"Lindsay","last_name":"Ferguson","avatar":"https://reqres.in/img/faces/8-image.jpg"},{"id":9,"email":"tobias.funke@reqres.in","first_name":"Tobias","last_name":"Funke","avatar":"https://reqres.in/img/faces/9-image.jpg"},{"id":10,"email":"byron.fields@reqres.in","first_name":"Byron","last_name":"Fields","avatar":"https://reqres.in/img/faces/10-image.jpg"},{"id":11,"email":"george.edwards@reqres.in","first_name":"George","last_name":"Edwards","avatar":"https://reqres.in/img/faces/11-image.jpg"},{"id":12,"email":"rachel.howell@reqres.in","first_name":"Rachel","last_name":"Howell","avatar":"https://reqres.in/img/faces/12-image.jpg"}],"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}</div>
+                    <div class="step-row">
+                        <div class="step-container" id="5">
+                            <div class="step-ref passed">5</div>
+                            <div class="step-cell passed">Then status 200</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="6">
+                            <div class="step-ref passed">6</div>
+                            <div class="step-cell passed">And print response</div>
+                        </div>
+                        <div class="time-cell passed">111</div>
+                    </div>
+                    <div class="preformatted" data-parent="6">14:03:06.736 [print] {
+  "per_page": 6,
+  "total": 12,
+  "data": [
+    {
+      "last_name": "Lawson",
+      "id": 7,
+      "avatar": "https://reqres.in/img/faces/7-image.jpg",
+      "first_name": "Michael",
+      "email": "michael.lawson@reqres.in"
+    },
+    {
+      "last_name": "Ferguson",
+      "id": 8,
+      "avatar": "https://reqres.in/img/faces/8-image.jpg",
+      "first_name": "Lindsay",
+      "email": "lindsay.ferguson@reqres.in"
+    },
+    {
+      "last_name": "Funke",
+      "id": 9,
+      "avatar": "https://reqres.in/img/faces/9-image.jpg",
+      "first_name": "Tobias",
+      "email": "tobias.funke@reqres.in"
+    },
+    {
+      "last_name": "Fields",
+      "id": 10,
+      "avatar": "https://reqres.in/img/faces/10-image.jpg",
+      "first_name": "Byron",
+      "email": "byron.fields@reqres.in"
+    },
+    {
+      "last_name": "Edwards",
+      "id": 11,
+      "avatar": "https://reqres.in/img/faces/11-image.jpg",
+      "first_name": "George",
+      "email": "george.edwards@reqres.in"
+    },
+    {
+      "last_name": "Howell",
+      "id": 12,
+      "avatar": "https://reqres.in/img/faces/12-image.jpg",
+      "first_name": "Rachel",
+      "email": "rachel.howell@reqres.in"
+    }
+  ],
+  "page": 2,
+  "total_pages": 2,
+  "support": {
+    "text": "To keep ReqRes free, contributions towards server costs are appreciated!",
+    "url": "https://reqres.in/#support-heading"
+  }
+}</div>
+                    <div class="step-row">
+                        <div class="step-container" id="7">
+                            <div class="step-ref passed">7</div>
+                            <div class="step-cell passed">And print responseStatus</div>
+                        </div>
+                        <div class="time-cell passed">6</div>
+                    </div>
+                    <div class="preformatted" data-parent="7">14:03:06.742 [print] 200</div>
+                    <div class="step-row">
+                        <div class="step-container" id="8">
+                            <div class="step-ref passed">8</div>
+                            <div class="step-cell passed">And print responseTime</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="preformatted" data-parent="8">14:03:06.742 [print] 628</div>
+                    <div class="step-row">
+                        <div class="step-container" id="9">
+                            <div class="step-ref passed">9</div>
+                            <div class="step-cell passed">And print responseHeaders</div>
+                        </div>
+                        <div class="time-cell passed">2</div>
+                    </div>
+                    <div class="preformatted" data-parent="9">14:03:06.744 [print] {
+  "Date": [
+    "Fri, 13 May 2022 11:03:06 GMT"
+  ],
+  "Content-Type": [
+    "application/json; charset=utf-8"
+  ],
+  "Transfer-Encoding": [
+    "chunked"
+  ],
+  "Connection": [
+    "keep-alive"
+  ],
+  "X-Powered-By": [
+    "Express"
+  ],
+  "Access-Control-Allow-Origin": [
+    "*"
+  ],
+  "Etag": [
+    "W/\"406-ut0vzoCuidvyMf8arZpMpJ6ZRDw\""
+  ],
+  "Via": [
+    "1.1 vegur"
+  ],
+  "Cache-Control": [
+    "max-age=14400"
+  ],
+  "CF-Cache-Status": [
+    "HIT"
+  ],
+  "Age": [
+    "1679"
+  ],
+  "Expect-CT": [
+    "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\""
+  ],
+  "Report-To": [
+    "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=y95p%2FPRkFS2wQhPqAk3a2NxHN%2BjgAcZ%2B2vbg8TLMn9PT6c9VkNR9%2FHUuo%2BqpiudKuzR8hFhHnj%2B1ViN8aQ3jQudyZKHBP%2FN6lCV25cn8M7G7XnBQikseQzew3ag%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}"
+  ],
+  "NEL": [
+    "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}"
+  ],
+  "Vary": [
+    "Accept-Encoding"
+  ],
+  "Server": [
+    "cloudflare"
+  ],
+  "CF-RAY": [
+    "70aae7d9695f777d-LHR"
+  ],
+  "alt-svc": [
+    "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400"
+  ]
+}</div>
+                    <div class="step-row">
+                        <div class="step-container" id="10">
+                            <div class="step-ref passed">10</div>
+                            <div class="step-cell passed">And print responseCookies</div>
+                        </div>
+                        <div class="time-cell passed">1</div>
+                    </div>
+                    <div class="preformatted" data-parent="10">14:03:06.753 [print]</div>
+                </div>
+                <div class="scenario">
+                    <div class="scenario-heading" id="[2:20]">
+                        <div class="heading-container">
+                            <div class="scenario-tags">
+                                <a class="badge badge-primary" href="karate-tags.html">tag</a>
+                            </div>
+                            <span class="scenario-keyword">Scenario: [2:20]</span><span class="scenario-name">Get Demo 2 </span>
+                        </div>
+                        <div class="scenario-time passed">ms: 1473</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="[2:20]bg">
+                            <div class="step-ref bg-step">&gt;&gt;</div>
+                            <div class="step-cell passed">Background:</div>
+                        </div>
+                        <div class="time-cell passed"></div>
+                    </div>
+                    <div class="step-row" data-parent="[2:20]bg">
+                        <div class="step-container" id="11">
+                            <div class="step-ref bg-step">11</div>
+                            <div class="step-cell passed">* url 'https://reqres.in/api'</div>
+                        </div>
+                        <div class="time-cell passed">14</div>
+                    </div>
+                    <div class="preformatted" data-parent="11">14:03:05.240 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js</div>
+                    <div class="step-row" data-parent="[2:20]bg">
+                        <div class="step-container" id="12">
+                            <div class="step-ref bg-step">12</div>
+                            <div class="step-cell passed">* header Accept = 'application/json'</div>
+                        </div>
+                        <div class="time-cell passed">6</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="13">
+                            <div class="step-ref passed">13</div>
+                            <div class="step-cell passed">Given path '/users?page=2'</div>
+                        </div>
+                        <div class="time-cell passed">6</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="14">
+                            <div class="step-ref passed">14</div>
+                            <div class="step-cell passed">When method GET</div>
+                        </div>
+                        <div class="time-cell passed">1325</div>
+                    </div>
+                    <div class="preformatted" data-parent="14">14:03:05.894 request:
+1 &gt; GET https://reqres.in/api/users%3Fpage=2
+1 &gt; Accept: application/json
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: reqres.in
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.11)
+
+14:03:06.550 response time in milliseconds: 653.05
+1 &lt; 200
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; CF-Cache-Status: MISS
+1 &lt; CF-RAY: 70aae7d96a5ef3ef-LHR
+1 &lt; Cache-Control: max-age=14400
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Fri, 13 May 2022 11:03:06 GMT
+1 &lt; Etag: W/"2c1-N6Rqerxquq2kgQhL51EiSg4x0R8"
+1 &lt; Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 &lt; NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 &lt; Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=DSOsYbHhX%2B0Ur3rNy%2BIs04jAc7SBexJnNRngd5cvIiXUeTBxKUnO7rvsLR%2F%2BERGMVUn6jEiiU87SCh%2B2zy%2B2RwGr6ocKrB3Wuz7%2FgW3cZkNtxDgDWKDB7JfmM00%3D"}],"group":"cf-nel","max_age":604800}
+1 &lt; Server: cloudflare
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Vary: Accept-Encoding
+1 &lt; Via: 1.1 vegur
+1 &lt; X-Powered-By: Express
+1 &lt; alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+{"page":1,"per_page":6,"total":12,"total_pages":2,"data":[{"id":1,"name":"cerulean","year":2000,"color":"#98B2D1","pantone_value":"15-4020"},{"id":2,"name":"fuchsia rose","year":2001,"color":"#C74375","pantone_value":"17-2031"},{"id":3,"name":"true red","year":2002,"color":"#BF1932","pantone_value":"19-1664"},{"id":4,"name":"aqua sky","year":2003,"color":"#7BC4C4","pantone_value":"14-4811"},{"id":5,"name":"tigerlily","year":2004,"color":"#E2583E","pantone_value":"17-1456"},{"id":6,"name":"blue turquoise","year":2005,"color":"#53B0AE","pantone_value":"15-5217"}],"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}</div>
+                    <div class="step-row">
+                        <div class="step-container" id="15">
+                            <div class="step-ref passed">15</div>
+                            <div class="step-cell passed">Then status 200</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="16">
+                            <div class="step-ref passed">16</div>
+                            <div class="step-cell passed">And print response</div>
+                        </div>
+                        <div class="time-cell passed">121</div>
+                    </div>
+                    <div class="preformatted" data-parent="16">14:03:06.747 [print] {
+  "per_page": 6,
+  "total": 12,
+  "data": [
+    {
+      "color": "#98B2D1",
+      "year": 2000,
+      "name": "cerulean",
+      "id": 1,
+      "pantone_value": "15-4020"
+    },
+    {
+      "color": "#C74375",
+      "year": 2001,
+      "name": "fuchsia rose",
+      "id": 2,
+      "pantone_value": "17-2031"
+    },
+    {
+      "color": "#BF1932",
+      "year": 2002,
+      "name": "true red",
+      "id": 3,
+      "pantone_value": "19-1664"
+    },
+    {
+      "color": "#7BC4C4",
+      "year": 2003,
+      "name": "aqua sky",
+      "id": 4,
+      "pantone_value": "14-4811"
+    },
+    {
+      "color": "#E2583E",
+      "year": 2004,
+      "name": "tigerlily",
+      "id": 5,
+      "pantone_value": "17-1456"
+    },
+    {
+      "color": "#53B0AE",
+      "year": 2005,
+      "name": "blue turquoise",
+      "id": 6,
+      "pantone_value": "15-5217"
+    }
+  ],
+  "page": 1,
+  "total_pages": 2,
+  "support": {
+    "text": "To keep ReqRes free, contributions towards server costs are appreciated!",
+    "url": "https://reqres.in/#support-heading"
+  }
+}</div>
+                </div>
+                <div class="scenario">
+                    <div class="scenario-heading" id="[3:27]">
+                        <div class="heading-container">
+                            <div class="scenario-tags">
+                                <a class="badge badge-primary" href="karate-tags.html">tag</a>
+                            </div>
+                            <span class="scenario-keyword">Scenario: [3:27]</span><span class="scenario-name">Get Demo 3 </span>
+                        </div>
+                        <div class="scenario-time passed">ms: 1487</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="[3:27]bg">
+                            <div class="step-ref bg-step">&gt;&gt;</div>
+                            <div class="step-cell passed">Background:</div>
+                        </div>
+                        <div class="time-cell passed"></div>
+                    </div>
+                    <div class="step-row" data-parent="[3:27]bg">
+                        <div class="step-container" id="17">
+                            <div class="step-ref bg-step">17</div>
+                            <div class="step-cell passed">* url 'https://reqres.in/api'</div>
+                        </div>
+                        <div class="time-cell passed">8</div>
+                    </div>
+                    <div class="preformatted" data-parent="17">14:03:05.240 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js</div>
+                    <div class="step-row" data-parent="[3:27]bg">
+                        <div class="step-container" id="18">
+                            <div class="step-ref bg-step">18</div>
+                            <div class="step-cell passed">* header Accept = 'application/json'</div>
+                        </div>
+                        <div class="time-cell passed">9</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="19">
+                            <div class="step-ref passed">19</div>
+                            <div class="step-cell passed">Given path '/users'</div>
+                        </div>
+                        <div class="time-cell passed">5</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="20">
+                            <div class="step-ref passed">20</div>
+                            <div class="step-cell passed">And param page = 2</div>
+                        </div>
+                        <div class="time-cell passed">6</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="21">
+                            <div class="step-ref passed">21</div>
+                            <div class="step-cell passed">When method GET</div>
+                        </div>
+                        <div class="time-cell passed">1332</div>
+                    </div>
+                    <div class="preformatted" data-parent="21">14:03:05.896 request:
+1 &gt; GET https://reqres.in/api/users?page=2
+1 &gt; Accept: application/json
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: reqres.in
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.11)
+
+14:03:06.529 response time in milliseconds: 625.46
+1 &lt; 200
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Age: 1679
+1 &lt; CF-Cache-Status: HIT
+1 &lt; CF-RAY: 70aae7d95ffa88b9-LHR
+1 &lt; Cache-Control: max-age=14400
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Fri, 13 May 2022 11:03:06 GMT
+1 &lt; Etag: W/"406-ut0vzoCuidvyMf8arZpMpJ6ZRDw"
+1 &lt; Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 &lt; NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 &lt; Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=RrbdtJec9W%2F9uHvfZZGmReij8xP0O%2Fx%2BpvwilCbMDuEFkgyfsnvzJXnpp%2BSckCdWofTWgXMXWVzyJYjlLSAqN4zgJ0qON8CDzUHq3JNzAs1%2F1C6nTvfTwV7%2BG9M%3D"}],"group":"cf-nel","max_age":604800}
+1 &lt; Server: cloudflare
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Vary: Accept-Encoding
+1 &lt; Via: 1.1 vegur
+1 &lt; X-Powered-By: Express
+1 &lt; alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+{"page":2,"per_page":6,"total":12,"total_pages":2,"data":[{"id":7,"email":"michael.lawson@reqres.in","first_name":"Michael","last_name":"Lawson","avatar":"https://reqres.in/img/faces/7-image.jpg"},{"id":8,"email":"lindsay.ferguson@reqres.in","first_name":"Lindsay","last_name":"Ferguson","avatar":"https://reqres.in/img/faces/8-image.jpg"},{"id":9,"email":"tobias.funke@reqres.in","first_name":"Tobias","last_name":"Funke","avatar":"https://reqres.in/img/faces/9-image.jpg"},{"id":10,"email":"byron.fields@reqres.in","first_name":"Byron","last_name":"Fields","avatar":"https://reqres.in/img/faces/10-image.jpg"},{"id":11,"email":"george.edwards@reqres.in","first_name":"George","last_name":"Edwards","avatar":"https://reqres.in/img/faces/11-image.jpg"},{"id":12,"email":"rachel.howell@reqres.in","first_name":"Rachel","last_name":"Howell","avatar":"https://reqres.in/img/faces/12-image.jpg"}],"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}</div>
+                    <div class="step-row">
+                        <div class="step-container" id="22">
+                            <div class="step-ref passed">22</div>
+                            <div class="step-cell passed">Then status 200</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="23">
+                            <div class="step-ref passed">23</div>
+                            <div class="step-cell passed">And print response</div>
+                        </div>
+                        <div class="time-cell passed">127</div>
+                    </div>
+                    <div class="preformatted" data-parent="23">14:03:06.754 [print] {
+  "per_page": 6,
+  "total": 12,
+  "data": [
+    {
+      "last_name": "Lawson",
+      "id": 7,
+      "avatar": "https://reqres.in/img/faces/7-image.jpg",
+      "first_name": "Michael",
+      "email": "michael.lawson@reqres.in"
+    },
+    {
+      "last_name": "Ferguson",
+      "id": 8,
+      "avatar": "https://reqres.in/img/faces/8-image.jpg",
+      "first_name": "Lindsay",
+      "email": "lindsay.ferguson@reqres.in"
+    },
+    {
+      "last_name": "Funke",
+      "id": 9,
+      "avatar": "https://reqres.in/img/faces/9-image.jpg",
+      "first_name": "Tobias",
+      "email": "tobias.funke@reqres.in"
+    },
+    {
+      "last_name": "Fields",
+      "id": 10,
+      "avatar": "https://reqres.in/img/faces/10-image.jpg",
+      "first_name": "Byron",
+      "email": "byron.fields@reqres.in"
+    },
+    {
+      "last_name": "Edwards",
+      "id": 11,
+      "avatar": "https://reqres.in/img/faces/11-image.jpg",
+      "first_name": "George",
+      "email": "george.edwards@reqres.in"
+    },
+    {
+      "last_name": "Howell",
+      "id": 12,
+      "avatar": "https://reqres.in/img/faces/12-image.jpg",
+      "first_name": "Rachel",
+      "email": "rachel.howell@reqres.in"
+    }
+  ],
+  "page": 2,
+  "total_pages": 2,
+  "support": {
+    "text": "To keep ReqRes free, contributions towards server costs are appreciated!",
+    "url": "https://reqres.in/#support-heading"
+  }
+}</div>
+                </div>
+                <div class="scenario">
+                    <div class="scenario-heading" id="[4:35]">
+                        <div class="heading-container">
+                            <div class="scenario-tags">
+                                <a class="badge badge-primary" href="karate-tags.html">tag</a>
+                            </div>
+                            <span class="scenario-keyword">Scenario: [4:35]</span><span class="scenario-name">Get Demo 4 </span>
+                        </div>
+                        <div class="scenario-time passed">ms: 502</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="[4:35]bg">
+                            <div class="step-ref bg-step">&gt;&gt;</div>
+                            <div class="step-cell passed">Background:</div>
+                        </div>
+                        <div class="time-cell passed"></div>
+                    </div>
+                    <div class="step-row" data-parent="[4:35]bg">
+                        <div class="step-container" id="24">
+                            <div class="step-ref bg-step">24</div>
+                            <div class="step-cell passed">* url 'https://reqres.in/api'</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="preformatted" data-parent="24">14:03:06.564 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js</div>
+                    <div class="step-row" data-parent="[4:35]bg">
+                        <div class="step-container" id="25">
+                            <div class="step-ref bg-step">25</div>
+                            <div class="step-cell passed">* header Accept = 'application/json'</div>
+                        </div>
+                        <div class="time-cell passed">1</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="26">
+                            <div class="step-ref passed">26</div>
+                            <div class="step-cell passed">Given path '/users'</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="27">
+                            <div class="step-ref passed">27</div>
+                            <div class="step-cell passed">And param page = 2</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="28">
+                            <div class="step-ref passed">28</div>
+                            <div class="step-cell passed">When method GET</div>
+                        </div>
+                        <div class="time-cell passed">345</div>
+                    </div>
+                    <div class="preformatted" data-parent="28">14:03:06.572 request:
+1 &gt; GET https://reqres.in/api/users?page=2
+1 &gt; Accept: application/json
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: reqres.in
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.11)
+
+14:03:06.912 response time in milliseconds: 338.56
+1 &lt; 200
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Age: 112
+1 &lt; CF-Cache-Status: HIT
+1 &lt; CF-RAY: 70aae7dbdf0472de-LHR
+1 &lt; Cache-Control: max-age=14400
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Fri, 13 May 2022 11:03:06 GMT
+1 &lt; Etag: W/"406-ut0vzoCuidvyMf8arZpMpJ6ZRDw"
+1 &lt; Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 &lt; NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 &lt; Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=hrpbNM2aTUwiehLPVGE7SMWG1TbSAHD%2FI1ExeTwQx%2Bs1fPvoJ8ZJFu30EwO2nf%2FlDCPC5x8RUmgyFZiQ8hWNF65W8uMfGU3M1qAN3tpZp68DraIpZUHH3Y4eQcE%3D"}],"group":"cf-nel","max_age":604800}
+1 &lt; Server: cloudflare
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Vary: Accept-Encoding
+1 &lt; Via: 1.1 vegur
+1 &lt; X-Powered-By: Express
+1 &lt; alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+{"page":2,"per_page":6,"total":12,"total_pages":2,"data":[{"id":7,"email":"michael.lawson@reqres.in","first_name":"Michael","last_name":"Lawson","avatar":"https://reqres.in/img/faces/7-image.jpg"},{"id":8,"email":"lindsay.ferguson@reqres.in","first_name":"Lindsay","last_name":"Ferguson","avatar":"https://reqres.in/img/faces/8-image.jpg"},{"id":9,"email":"tobias.funke@reqres.in","first_name":"Tobias","last_name":"Funke","avatar":"https://reqres.in/img/faces/9-image.jpg"},{"id":10,"email":"byron.fields@reqres.in","first_name":"Byron","last_name":"Fields","avatar":"https://reqres.in/img/faces/10-image.jpg"},{"id":11,"email":"george.edwards@reqres.in","first_name":"George","last_name":"Edwards","avatar":"https://reqres.in/img/faces/11-image.jpg"},{"id":12,"email":"rachel.howell@reqres.in","first_name":"Rachel","last_name":"Howell","avatar":"https://reqres.in/img/faces/12-image.jpg"}],"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}</div>
+                    <div class="step-row">
+                        <div class="step-container" id="29">
+                            <div class="step-ref passed">29</div>
+                            <div class="step-cell passed">Then status 200</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="30">
+                            <div class="step-ref passed">30</div>
+                            <div class="step-cell passed">And print response</div>
+                        </div>
+                        <div class="time-cell passed">6</div>
+                    </div>
+                    <div class="preformatted" data-parent="30">14:03:06.919 [print] {
+  "per_page": 6,
+  "total": 12,
+  "data": [
+    {
+      "last_name": "Lawson",
+      "id": 7,
+      "avatar": "https://reqres.in/img/faces/7-image.jpg",
+      "first_name": "Michael",
+      "email": "michael.lawson@reqres.in"
+    },
+    {
+      "last_name": "Ferguson",
+      "id": 8,
+      "avatar": "https://reqres.in/img/faces/8-image.jpg",
+      "first_name": "Lindsay",
+      "email": "lindsay.ferguson@reqres.in"
+    },
+    {
+      "last_name": "Funke",
+      "id": 9,
+      "avatar": "https://reqres.in/img/faces/9-image.jpg",
+      "first_name": "Tobias",
+      "email": "tobias.funke@reqres.in"
+    },
+    {
+      "last_name": "Fields",
+      "id": 10,
+      "avatar": "https://reqres.in/img/faces/10-image.jpg",
+      "first_name": "Byron",
+      "email": "byron.fields@reqres.in"
+    },
+    {
+      "last_name": "Edwards",
+      "id": 11,
+      "avatar": "https://reqres.in/img/faces/11-image.jpg",
+      "first_name": "George",
+      "email": "george.edwards@reqres.in"
+    },
+    {
+      "last_name": "Howell",
+      "id": 12,
+      "avatar": "https://reqres.in/img/faces/12-image.jpg",
+      "first_name": "Rachel",
+      "email": "rachel.howell@reqres.in"
+    }
+  ],
+  "page": 2,
+  "total_pages": 2,
+  "support": {
+    "text": "To keep ReqRes free, contributions towards server costs are appreciated!",
+    "url": "https://reqres.in/#support-heading"
+  }
+}</div>
+                    <div class="step-row">
+                        <div class="step-container" id="31">
+                            <div class="step-ref passed">31</div>
+                            <div class="step-cell passed">And match response.data[0].first_name != null</div>
+                        </div>
+                        <div class="time-cell passed">25</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="32">
+                            <div class="step-ref passed">32</div>
+                            <div class="step-cell passed">And assert response.data.length == 6</div>
+                        </div>
+                        <div class="time-cell passed">114</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="33">
+                            <div class="step-ref passed">33</div>
+                            <div class="step-cell passed">And match $.data[3].id == 10</div>
+                        </div>
+                        <div class="time-cell passed">5</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="34">
+                            <div class="step-ref passed">34</div>
+                            <div class="step-cell passed">And match response.data[4].last_name == 'Edwards'</div>
+                        </div>
+                        <div class="time-cell passed">4</div>
+                    </div>
+                </div>
+            </div>
+                
+        </div>
+           
+  
+    </body>
+    
+</html>

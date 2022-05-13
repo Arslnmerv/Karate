@@ -1,0 +1,225 @@
+<testsuite failures="2" name="tests/Post.feature" skipped="0" tests="6" time="2.201822">
+  <testcase classname="tests.Post" name="Post Demo 1" time="0.467743">
+    <system-out>* url 'https://reqres.in/api' ............................................. passed
+* header Accept = 'application/json' ...................................... passed
+* def expectedOutput = read("response1.json") ............................. passed
+Given url 'https://reqres.in/api/users' ................................... passed
+And request {"name": "murphy",  "job": "leader" } ......................... passed
+When method POST .......................................................... passed
+Then status 201 ........................................................... passed
+And print response ........................................................ passed</system-out>
+  </testcase>
+  <testcase classname="tests.Post" name="Post Demo 2" time="0.369813">
+    <system-out>* url 'https://reqres.in/api' ............................................. passed
+* header Accept = 'application/json' ...................................... passed
+* def expectedOutput = read("response1.json") ............................. passed
+Given url 'https://reqres.in/api/users' ................................... passed
+And request {"name": "murphy",  "job": "leader" } ......................... passed
+When method POST .......................................................... passed
+Then status 201 ........................................................... passed
+And print response ........................................................ passed
+* url 'https://reqres.in/api' ............................................. passed
+* header Accept = 'application/json' ...................................... passed
+* def expectedOutput = read("response1.json") ............................. passed
+Given path  '/users' ...................................................... passed
+And request {"name": "murphy",  "job": "leader" } ......................... passed
+When method POST .......................................................... passed
+Then status 201 ........................................................... passed
+And print response ........................................................ passed</system-out>
+  </testcase>
+  <testcase classname="tests.Post" name="Post Demo 3" time="0.361212">
+    <system-out>* url 'https://reqres.in/api' ............................................. passed
+* header Accept = 'application/json' ...................................... passed
+* def expectedOutput = read("response1.json") ............................. passed
+Given url 'https://reqres.in/api/users' ................................... passed
+And request {"name": "murphy",  "job": "leader" } ......................... passed
+When method POST .......................................................... passed
+Then status 201 ........................................................... passed
+And print response ........................................................ passed
+* url 'https://reqres.in/api' ............................................. passed
+* header Accept = 'application/json' ...................................... passed
+* def expectedOutput = read("response1.json") ............................. passed
+Given path  '/users' ...................................................... passed
+And request {"name": "murphy",  "job": "leader" } ......................... passed
+When method POST .......................................................... passed
+Then status 201 ........................................................... passed
+And print response ........................................................ passed
+* url 'https://reqres.in/api' ............................................. passed
+* header Accept = 'application/json' ...................................... passed
+* def expectedOutput = read("response1.json") ............................. passed
+Given path  '/users' ...................................................... passed
+And request {"name": "murphy",  "job": "leader" } ......................... passed
+When method POST .......................................................... passed
+Then status 201 ........................................................... passed
+And match response == {"createdAt": "#ignore", "name": "murphy",  "id": "#string",  "job": "leader"} . passed
+And print response ........................................................ passed</system-out>
+  </testcase>
+  <testcase classname="tests.Post" name="Post Demo 4" time="0.348519">
+    <system-out>* url 'https://reqres.in/api' ............................................. passed
+* header Accept = 'application/json' ...................................... passed
+* def expectedOutput = read("response1.json") ............................. passed
+Given url 'https://reqres.in/api/users' ................................... passed
+And request {"name": "murphy",  "job": "leader" } ......................... passed
+When method POST .......................................................... passed
+Then status 201 ........................................................... passed
+And print response ........................................................ passed
+* url 'https://reqres.in/api' ............................................. passed
+* header Accept = 'application/json' ...................................... passed
+* def expectedOutput = read("response1.json") ............................. passed
+Given path  '/users' ...................................................... passed
+And request {"name": "murphy",  "job": "leader" } ......................... passed
+When method POST .......................................................... passed
+Then status 201 ........................................................... passed
+And print response ........................................................ passed
+* url 'https://reqres.in/api' ............................................. passed
+* header Accept = 'application/json' ...................................... passed
+* def expectedOutput = read("response1.json") ............................. passed
+Given path  '/users' ...................................................... passed
+And request {"name": "murphy",  "job": "leader" } ......................... passed
+When method POST .......................................................... passed
+Then status 201 ........................................................... passed
+And match response == {"createdAt": "#ignore", "name": "murphy",  "id": "#string",  "job": "leader"} . passed
+And print response ........................................................ passed
+* url 'https://reqres.in/api' ............................................. passed
+* header Accept = 'application/json' ...................................... passed
+* def expectedOutput = read("response1.json") ............................. passed
+Given path  '/users' ...................................................... passed
+And request {"name": "murphy",  "job": "leader" } ......................... passed
+When method POST .......................................................... passed
+Then status 201 ........................................................... passed
+And match response == expectedOutput ...................................... passed
+And match $ == expectedOutput ............................................. passed
+And print response ........................................................ passed</system-out>
+  </testcase>
+  <testcase classname="tests.Post" name="Post Demo 5" time="0.319617">
+    <failure message="Post.feature:54 - path: $, actual: {&quot;createdAt&quot;:&quot;2022-05-13T11:03:07.379Z&quot;,&quot;id&quot;:&quot;600&quot;}, expected: {createdAt=#ignore, name=murphy, id=#string, job=leader}, reason: all key-values did not match, expected has un-matched keys: [name, job]">* url 'https://reqres.in/api' ............................................. passed
+* header Accept = 'application/json' ...................................... passed
+* def expectedOutput = read("response1.json") ............................. passed
+Given url 'https://reqres.in/api/users' ................................... passed
+And request {"name": "murphy",  "job": "leader" } ......................... passed
+When method POST .......................................................... passed
+Then status 201 ........................................................... passed
+And print response ........................................................ passed
+* url 'https://reqres.in/api' ............................................. passed
+* header Accept = 'application/json' ...................................... passed
+* def expectedOutput = read("response1.json") ............................. passed
+Given path  '/users' ...................................................... passed
+And request {"name": "murphy",  "job": "leader" } ......................... passed
+When method POST .......................................................... passed
+Then status 201 ........................................................... passed
+And print response ........................................................ passed
+* url 'https://reqres.in/api' ............................................. passed
+* header Accept = 'application/json' ...................................... passed
+* def expectedOutput = read("response1.json") ............................. passed
+Given path  '/users' ...................................................... passed
+And request {"name": "murphy",  "job": "leader" } ......................... passed
+When method POST .......................................................... passed
+Then status 201 ........................................................... passed
+And match response == {"createdAt": "#ignore", "name": "murphy",  "id": "#string",  "job": "leader"} . passed
+And print response ........................................................ passed
+* url 'https://reqres.in/api' ............................................. passed
+* header Accept = 'application/json' ...................................... passed
+* def expectedOutput = read("response1.json") ............................. passed
+Given path  '/users' ...................................................... passed
+And request {"name": "murphy",  "job": "leader" } ......................... passed
+When method POST .......................................................... passed
+Then status 201 ........................................................... passed
+And match response == expectedOutput ...................................... passed
+And match $ == expectedOutput ............................................. passed
+And print response ........................................................ passed
+* url 'https://reqres.in/api' ............................................. passed
+* header Accept = 'application/json' ...................................... passed
+* def expectedOutput = read("response1.json") ............................. passed
+Given path  '/users' ...................................................... passed
+And def projectPath = karate.properties['user.dir'] ....................... passed
+And print projectPath ..................................................... passed
+And def filePath = projectPath+'src/test/java/data/request1.json' ......... passed
+And print filePath ........................................................ passed
+And def requestBody1 = filePath ........................................... passed
+And request requestBody1 .................................................. passed
+When method POST .......................................................... passed
+Then status 201 ........................................................... passed
+And match response == expectedOutput ...................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: Post.feature:54 - path: $, actual: {"createdAt":"2022-05-13T11:03:07.379Z","id":"600"}, expected: {createdAt=#ignore, name=murphy, id=#string, job=leader}, reason: all key-values did not match, expected has un-matched keys: [name, job]&#13;
+	at ✽.And match response == expectedOutput (Post.feature:54)&#13;
+
+And match $ == expectedOutput ............................................. skipped
+And print response ........................................................ skipped</failure>
+  </testcase>
+  <testcase classname="tests.Post" name="Post Demo 6" time="0.334917">
+    <failure message="Post.feature:66 - path: $.job, actual: 'engineer', expected: 'leader', reason: not equal">* url 'https://reqres.in/api' ............................................. passed
+* header Accept = 'application/json' ...................................... passed
+* def expectedOutput = read("response1.json") ............................. passed
+Given url 'https://reqres.in/api/users' ................................... passed
+And request {"name": "murphy",  "job": "leader" } ......................... passed
+When method POST .......................................................... passed
+Then status 201 ........................................................... passed
+And print response ........................................................ passed
+* url 'https://reqres.in/api' ............................................. passed
+* header Accept = 'application/json' ...................................... passed
+* def expectedOutput = read("response1.json") ............................. passed
+Given path  '/users' ...................................................... passed
+And request {"name": "murphy",  "job": "leader" } ......................... passed
+When method POST .......................................................... passed
+Then status 201 ........................................................... passed
+And print response ........................................................ passed
+* url 'https://reqres.in/api' ............................................. passed
+* header Accept = 'application/json' ...................................... passed
+* def expectedOutput = read("response1.json") ............................. passed
+Given path  '/users' ...................................................... passed
+And request {"name": "murphy",  "job": "leader" } ......................... passed
+When method POST .......................................................... passed
+Then status 201 ........................................................... passed
+And match response == {"createdAt": "#ignore", "name": "murphy",  "id": "#string",  "job": "leader"} . passed
+And print response ........................................................ passed
+* url 'https://reqres.in/api' ............................................. passed
+* header Accept = 'application/json' ...................................... passed
+* def expectedOutput = read("response1.json") ............................. passed
+Given path  '/users' ...................................................... passed
+And request {"name": "murphy",  "job": "leader" } ......................... passed
+When method POST .......................................................... passed
+Then status 201 ........................................................... passed
+And match response == expectedOutput ...................................... passed
+And match $ == expectedOutput ............................................. passed
+And print response ........................................................ passed
+* url 'https://reqres.in/api' ............................................. passed
+* header Accept = 'application/json' ...................................... passed
+* def expectedOutput = read("response1.json") ............................. passed
+Given path  '/users' ...................................................... passed
+And def projectPath = karate.properties['user.dir'] ....................... passed
+And print projectPath ..................................................... passed
+And def filePath = projectPath+'src/test/java/data/request1.json' ......... passed
+And print filePath ........................................................ passed
+And def requestBody1 = filePath ........................................... passed
+And request requestBody1 .................................................. passed
+When method POST .......................................................... passed
+Then status 201 ........................................................... passed
+And match response == expectedOutput ...................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: Post.feature:54 - path: $, actual: {"createdAt":"2022-05-13T11:03:07.379Z","id":"600"}, expected: {createdAt=#ignore, name=murphy, id=#string, job=leader}, reason: all key-values did not match, expected has un-matched keys: [name, job]&#13;
+	at ✽.And match response == expectedOutput (Post.feature:54)&#13;
+
+And match $ == expectedOutput ............................................. skipped
+And print response ........................................................ skipped
+* url 'https://reqres.in/api' ............................................. passed
+* header Accept = 'application/json' ...................................... passed
+* def expectedOutput = read("response1.json") ............................. passed
+Given path  '/users' ...................................................... passed
+And def reqBody = read("request1.json") ................................... passed
+And set reqBody.job = 'engineer' .......................................... passed
+And request reqBody ....................................................... passed
+When method POST .......................................................... passed
+Then status 201 ........................................................... passed
+And match response == expectedOutput ...................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: Post.feature:66 - path: $.job, actual: 'engineer', expected: 'leader', reason: not equal&#13;
+	at ✽.And match response == expectedOutput (Post.feature:66)&#13;
+
+And match $ == expectedOutput ............................................. skipped
+And print response ........................................................ skipped</failure>
+  </testcase>
+</testsuite>

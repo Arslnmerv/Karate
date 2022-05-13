@@ -1,0 +1,221 @@
+14:03:05.240 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+14:03:05.898 request:
+1 > GET https://reqres.in/api/users?page=2
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: reqres.in
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.11)
+
+14:03:06.530 response time in milliseconds: 628.08
+1 < 200
+1 < Access-Control-Allow-Origin: *
+1 < Age: 1679
+1 < CF-Cache-Status: HIT
+1 < CF-RAY: 70aae7d9695f777d-LHR
+1 < Cache-Control: max-age=14400
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Fri, 13 May 2022 11:03:06 GMT
+1 < Etag: W/"406-ut0vzoCuidvyMf8arZpMpJ6ZRDw"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=y95p%2FPRkFS2wQhPqAk3a2NxHN%2BjgAcZ%2B2vbg8TLMn9PT6c9VkNR9%2FHUuo%2BqpiudKuzR8hFhHnj%2B1ViN8aQ3jQudyZKHBP%2FN6lCV25cn8M7G7XnBQikseQzew3ag%3D"}],"group":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < Transfer-Encoding: chunked
+1 < Vary: Accept-Encoding
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+1 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+{"page":2,"per_page":6,"total":12,"total_pages":2,"data":[{"id":7,"email":"michael.lawson@reqres.in","first_name":"Michael","last_name":"Lawson","avatar":"https://reqres.in/img/faces/7-image.jpg"},{"id":8,"email":"lindsay.ferguson@reqres.in","first_name":"Lindsay","last_name":"Ferguson","avatar":"https://reqres.in/img/faces/8-image.jpg"},{"id":9,"email":"tobias.funke@reqres.in","first_name":"Tobias","last_name":"Funke","avatar":"https://reqres.in/img/faces/9-image.jpg"},{"id":10,"email":"byron.fields@reqres.in","first_name":"Byron","last_name":"Fields","avatar":"https://reqres.in/img/faces/10-image.jpg"},{"id":11,"email":"george.edwards@reqres.in","first_name":"George","last_name":"Edwards","avatar":"https://reqres.in/img/faces/11-image.jpg"},{"id":12,"email":"rachel.howell@reqres.in","first_name":"Rachel","last_name":"Howell","avatar":"https://reqres.in/img/faces/12-image.jpg"}],"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}
+
+14:03:06.736 [print] {
+  "per_page": 6,
+  "total": 12,
+  "data": [
+    {
+      "last_name": "Lawson",
+      "id": 7,
+      "avatar": "https://reqres.in/img/faces/7-image.jpg",
+      "first_name": "Michael",
+      "email": "michael.lawson@reqres.in"
+    },
+    {
+      "last_name": "Ferguson",
+      "id": 8,
+      "avatar": "https://reqres.in/img/faces/8-image.jpg",
+      "first_name": "Lindsay",
+      "email": "lindsay.ferguson@reqres.in"
+    },
+    {
+      "last_name": "Funke",
+      "id": 9,
+      "avatar": "https://reqres.in/img/faces/9-image.jpg",
+      "first_name": "Tobias",
+      "email": "tobias.funke@reqres.in"
+    },
+    {
+      "last_name": "Fields",
+      "id": 10,
+      "avatar": "https://reqres.in/img/faces/10-image.jpg",
+      "first_name": "Byron",
+      "email": "byron.fields@reqres.in"
+    },
+    {
+      "last_name": "Edwards",
+      "id": 11,
+      "avatar": "https://reqres.in/img/faces/11-image.jpg",
+      "first_name": "George",
+      "email": "george.edwards@reqres.in"
+    },
+    {
+      "last_name": "Howell",
+      "id": 12,
+      "avatar": "https://reqres.in/img/faces/12-image.jpg",
+      "first_name": "Rachel",
+      "email": "rachel.howell@reqres.in"
+    }
+  ],
+  "page": 2,
+  "total_pages": 2,
+  "support": {
+    "text": "To keep ReqRes free, contributions towards server costs are appreciated!",
+    "url": "https://reqres.in/#support-heading"
+  }
+}
+
+14:03:06.742 [print] 200
+14:03:06.742 [print] 628
+14:03:06.744 [print] {
+  "Date": [
+    "Fri, 13 May 2022 11:03:06 GMT"
+  ],
+  "Content-Type": [
+    "application/json; charset=utf-8"
+  ],
+  "Transfer-Encoding": [
+    "chunked"
+  ],
+  "Connection": [
+    "keep-alive"
+  ],
+  "X-Powered-By": [
+    "Express"
+  ],
+  "Access-Control-Allow-Origin": [
+    "*"
+  ],
+  "Etag": [
+    "W/\"406-ut0vzoCuidvyMf8arZpMpJ6ZRDw\""
+  ],
+  "Via": [
+    "1.1 vegur"
+  ],
+  "Cache-Control": [
+    "max-age=14400"
+  ],
+  "CF-Cache-Status": [
+    "HIT"
+  ],
+  "Age": [
+    "1679"
+  ],
+  "Expect-CT": [
+    "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\""
+  ],
+  "Report-To": [
+    "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=y95p%2FPRkFS2wQhPqAk3a2NxHN%2BjgAcZ%2B2vbg8TLMn9PT6c9VkNR9%2FHUuo%2BqpiudKuzR8hFhHnj%2B1ViN8aQ3jQudyZKHBP%2FN6lCV25cn8M7G7XnBQikseQzew3ag%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}"
+  ],
+  "NEL": [
+    "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}"
+  ],
+  "Vary": [
+    "Accept-Encoding"
+  ],
+  "Server": [
+    "cloudflare"
+  ],
+  "CF-RAY": [
+    "70aae7d9695f777d-LHR"
+  ],
+  "alt-svc": [
+    "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400"
+  ]
+}
+
+14:03:06.753 [print] 
+14:03:06.781 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+14:03:06.793 request:
+1 > POST https://reqres.in/api/users
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 32
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: reqres.in
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.11)
+{"name":"murphy","job":"leader"}
+
+14:03:07.151 response time in milliseconds: 357.02
+1 < 201
+1 < Access-Control-Allow-Origin: *
+1 < CF-Cache-Status: DYNAMIC
+1 < CF-RAY: 70aae7dd0c874066-LHR
+1 < Connection: keep-alive
+1 < Content-Length: 82
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Fri, 13 May 2022 11:03:07 GMT
+1 < Etag: W/"52-FeghnBd9KlMfN+gHs0q21lwVgoY"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=lGcFXZ5wtkvipIvbLqljOA%2F%2BPAConXl9BSen3PKituNtScrnafUfDCLZYVO4wm%2BhpU7sLqtMhb4p8wq8N9OrfZP6sNjXWIItRKj6%2Buf1fWu94%2Flbm7n3XYwEYKY%3D"}],"group":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+1 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+{"name":"murphy","job":"leader","id":"370","createdAt":"2022-05-13T11:03:07.073Z"}
+
+14:03:07.152 [print] {
+  "createdAt": "2022-05-13T11:03:07.073Z",
+  "name": "murphy",
+  "id": "370",
+  "job": "leader"
+}
+
+14:03:07.162 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+14:03:07.166 request:
+1 > PUT https://reqres.in/api/users/2
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 41
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: reqres.in
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.11)
+{"name":"morpheus","job":"zion resident"}
+
+14:03:07.488 response time in milliseconds: 320.53
+1 < 200
+1 < Access-Control-Allow-Origin: *
+1 < CF-Cache-Status: DYNAMIC
+1 < CF-RAY: 70aae7df3f3588bb-LHR
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Fri, 13 May 2022 11:03:07 GMT
+1 < Etag: W/"50-dc5zSGkbQ53wo7Nj/ThAeUbnTAc"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=9Q2nI3QQ7SOYWFYSACBTdy0ckFaZ5Ig2u2Fz%2BOj48MHNjLip94e81m8L0fOU19lxHTBf4ud9utR9fVRUdyr7EJEil3fkM1XKU%2BgTdljUq85V%2FmTsmVr91%2FPLno8%3D"}],"group":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < Transfer-Encoding: chunked
+1 < Vary: Accept-Encoding
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+1 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+{"name":"morpheus","job":"zion resident","updatedAt":"2022-05-13T11:03:07.428Z"}
+
+14:03:07.488 [print] {
+  "name": "morpheus",
+  "job": "zion resident",
+  "updatedAt": "2022-05-13T11:03:07.428Z"
+}
+

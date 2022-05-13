@@ -1,0 +1,8 @@
+<testsuite failures="0" name="tests/Delete.feature" skipped="0" tests="1" time="1.287242">
+  <testcase classname="tests.Delete" name="Delete Demo 1" time="1.287242">
+    <system-out>Given url 'https://reqres.in/api/users/2' ................................. passed
+When method DELETE ........................................................ passed
+Then status 204 ........................................................... passed
+And print response ........................................................ passed</system-out>
+  </testcase>
+</testsuite>

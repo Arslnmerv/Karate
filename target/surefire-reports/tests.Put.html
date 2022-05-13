@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+      
+    <head>
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            
+        <meta charset="utf-8">
+            
+        <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+            
+        <link href="res/bootstrap.min.css" rel="stylesheet" type="text/css">
+            
+        <link href="res/karate-report.css" rel="stylesheet" type="text/css">
+            
+        <link href="favicon.ico" rel="shortcut icon">
+            <script src="res/jquery.min.js" type="text/javascript"></script>
+    <script src="res/jquery.tablesorter.min.js" type="text/javascript"></script>
+    <script src="res/bootstrap.min.js" type="text/javascript"></script>
+    <script src="res/karate-report.js" type="text/javascript"></script>
+    
+        <title>tests.Put</title>
+          
+    </head>
+      
+    <body>
+            
+        <div id="root-container">
+                  
+            <div id="leftnav">
+                        
+                <div class="nav-logo">
+                              <a href="karate-summary.html">
+            <img alt="Karate" src="res/karate-logo.svg">
+          </a>
+          
+                    <div class="nav-count">
+                                    
+                        <div class="bg-success" id="nav-pass">1</div>
+                                    
+                        <div class="bg-danger" id="nav-fail">0</div>
+                                  
+                    </div>
+                            
+                </div>
+                        
+                <div id="nav-type">Scenarios</div>
+                         
+        
+                <div id="nav-date">2022-05-13 02:03:07 PM</div>
+                        
+      
+                <div class="nav-container">
+                    <div class="nav-item passed">
+                        <a href="#[1:4]">[1:4] Put Demo 1 </a>
+                    </div>
+                </div>
+            </div>
+                  
+            <div id="content">
+                      
+                <div class="page-heading alert alert-primary">
+                    <a href="karate-summary.html">Summary</a><span class="feature-label">|</span><a href="karate-tags.html">Tags</a><span class="feature-label">|</span><span class="feature-label">Feature:</span><span class="feature-name">tests/Put.feature</span><span class="feature-description">PUT API Demo</span>
+                </div>
+                <div class="scenario">
+                    <div class="scenario-heading" id="[1:4]">
+                        <div class="heading-container">
+                            <div class="scenario-tags">
+                                <a class="badge badge-primary" href="karate-tags.html">tag</a>
+                            </div>
+                            <span class="scenario-keyword">Scenario: [1:4]</span><span class="scenario-name">Put Demo 1 </span>
+                        </div>
+                        <div class="scenario-time passed">ms: 326</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="1">
+                            <div class="step-ref passed">1</div>
+                            <div class="step-cell passed">Given url 'https://reqres.in/api/users/2'</div>
+                        </div>
+                        <div class="time-cell passed">1</div>
+                    </div>
+                    <div class="preformatted" data-parent="1">14:03:07.162 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js</div>
+                    <div class="step-row">
+                        <div class="step-container" id="2">
+                            <div class="step-ref passed">2</div>
+                            <div class="step-cell passed">And request {"name": "morpheus",  "job": "zion resident"}</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="3">
+                            <div class="step-ref passed">3</div>
+                            <div class="step-cell passed">When method PUT</div>
+                        </div>
+                        <div class="time-cell passed">324</div>
+                    </div>
+                    <div class="preformatted" data-parent="3">14:03:07.166 request:
+1 &gt; PUT https://reqres.in/api/users/2
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 41
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: reqres.in
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.11)
+{"name":"morpheus","job":"zion resident"}
+
+14:03:07.488 response time in milliseconds: 320.53
+1 &lt; 200
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; CF-Cache-Status: DYNAMIC
+1 &lt; CF-RAY: 70aae7df3f3588bb-LHR
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Fri, 13 May 2022 11:03:07 GMT
+1 &lt; Etag: W/"50-dc5zSGkbQ53wo7Nj/ThAeUbnTAc"
+1 &lt; Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 &lt; NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 &lt; Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=9Q2nI3QQ7SOYWFYSACBTdy0ckFaZ5Ig2u2Fz%2BOj48MHNjLip94e81m8L0fOU19lxHTBf4ud9utR9fVRUdyr7EJEil3fkM1XKU%2BgTdljUq85V%2FmTsmVr91%2FPLno8%3D"}],"group":"cf-nel","max_age":604800}
+1 &lt; Server: cloudflare
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Vary: Accept-Encoding
+1 &lt; Via: 1.1 vegur
+1 &lt; X-Powered-By: Express
+1 &lt; alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+{"name":"morpheus","job":"zion resident","updatedAt":"2022-05-13T11:03:07.428Z"}</div>
+                    <div class="step-row">
+                        <div class="step-container" id="4">
+                            <div class="step-ref passed">4</div>
+                            <div class="step-cell passed">Then status 200</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="5">
+                            <div class="step-ref passed">5</div>
+                            <div class="step-cell passed">And print response</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="preformatted" data-parent="5">14:03:07.488 [print] {
+  "name": "morpheus",
+  "job": "zion resident",
+  "updatedAt": "2022-05-13T11:03:07.428Z"
+}</div>
+                </div>
+            </div>
+                
+        </div>
+           
+  
+    </body>
+    
+</html>
